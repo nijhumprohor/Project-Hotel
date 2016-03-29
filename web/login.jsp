@@ -78,7 +78,6 @@
                                         <jsp:forward page="response.jsp"/> 
                                       <%  } 
                                 %>
-
                                 <p class="change_link">
                                     Not a member yet ?
                                     <a href="registration.jsp#toregister" class="to_register">Join us</a>
