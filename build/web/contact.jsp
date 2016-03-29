@@ -60,9 +60,9 @@ E-mail:<br>
 <a class="google-map-code" href="http://wordpress-themes.org" id="get-map-data">http://wordpress-themes.org/</a></div>
 <script type="text/javascript">
 function init_map(){
-  var myOptions = {zoom:14,center:new google.maps.LatLng(43.728544,-79.607913),mapTypeId: google.maps.MapTypeId.ROADMAP};
+  var myOptions = {zoom:14,center:new google.maps.LatLng(43.646710, -79.392013),mapTypeId: google.maps.MapTypeId.ROADMAP};
   map = new google.maps.Map(document.getElementById("gmap_canvas"),myOptions);
-  marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.728544, -79.607913)});
+  marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.646710, -79.392013)});
   infowindow = new google.maps.InfoWindow({content:"<b>RICKY'S HOME</b><br/>370 King Street<br/> M5V 1J9 Toronto" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);
   });
   infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
