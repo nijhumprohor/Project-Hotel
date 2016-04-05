@@ -41,7 +41,7 @@
 <form action="form.php" method="get" name="form1" id="form1">
 
 
- <form action="MAILTO:sumanth3649@gmail.com" method="post" enctype="text/plain">
+ <form action="MAILTO:ruhul.amin.ca@gmail.com" method="post" enctype="text/plain">
 Name:<br>
 <input type="text" name="name" value="your name"><br>
 E-mail:<br>

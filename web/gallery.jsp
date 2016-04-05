@@ -3,7 +3,7 @@
     Created on : Mar 27, 2016, 1:10:39 PM
     Author     : ruhul
 --%>
-
+<%@page session="true" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
