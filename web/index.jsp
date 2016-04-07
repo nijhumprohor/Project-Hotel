@@ -9,8 +9,7 @@ Hotel Info: http://torontoregency.hyatt.com/en/hotel/our-hotel.html
 <!DOCTYPE html>
 <%@ page session = "true" %>
 
-
-    
+ 
     
     <header>
         <h1 style = "color:#ff3333;">Ricky's Home</h1>
