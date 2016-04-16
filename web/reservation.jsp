@@ -62,7 +62,7 @@
         </div>
         <%
             Class.forName("oracle.jdbc.driver.OracleDriver").newInstance();
-            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@dilbert.humber.ca:1521:grok", "N00797103", "oracle");
+            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@dilbert.humber.ca:1521:grok", "n01068251", "oracle");
             Statement st = connection.createStatement();
             ArrayList desc = new ArrayList();
             ArrayList price = new ArrayList();
