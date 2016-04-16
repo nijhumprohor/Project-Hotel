@@ -15,6 +15,7 @@
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -87,7 +88,8 @@
                 %>
                 <form action="booking.jsp"> 
                 <input type="submit" value="Book" name="submit">
-                                </form>
+                 </form>
+                
                 <%
                 String room = request.getParameter("roomNumber");
                 if (room == null){
