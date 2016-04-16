@@ -17,8 +17,26 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Registration</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/navigation.css"/>        
+        <title>Gallery</title>
     </head>
+    <header>
+        <h1>Banana Hotel</h1>
+        <div class = "navigation">
+            <ul>
+                <li><a id="id" href = "index.jsp">Home</a></li>
+                <li><a href="reservation.jsp">Reservation</a></li> 
+                <li><a href = "gallery.jsp">Gallery</a></li>
+                <li><a href = "contact.jsp">Contact</a></li>
+                    <% if ((session.getAttribute("username") == null) || (session.getAttribute("username") == "")) {%>
+                <li style="float:right"><a href="login.jsp">Login/Signup</a></li>
+                    <%} else { %>
+                <li style="float:right"><a href="logut.jsp">Logout</a></li>
+                    <%}%>
+            </ul>
+        </div>
+    </header>
     <body>
         <div class="container">
             <!-- Codrops top bar -->

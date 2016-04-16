@@ -9,38 +9,80 @@ Hotel Info: http://torontoregency.hyatt.com/en/hotel/our-hotel.html
 <!DOCTYPE html>
 <%@ page session = "true" %>
 
- 
-    
-    <header>
-        <h1 style = "color:#ff3333;">Ricky's Home</h1>
-    </header>
-    <div class = "navigation">
-        <li><a id="id" href = "index.jsp">Home</a><li>
-        <li><a href="reservation.jsp">Reservation</a></li> 
-        <li><a href = "gallery.jsp">Gallery</a></li>
-        <li><a href = "contact.jsp">Contact</a></li>
-        <% if ((session.getAttribute("username")==null) || (session.getAttribute("username")=="")){%>
-        <li><a href="login.jsp">Login/Signup</a></li>
-        <%} else{ %>
-        <li><a href="logut.jsp">Logout</a></li>
-        <%}%>
-    </div>
-   
-    <body>
-        <h2 style="text-align: center;color: #99ff66; font-size: 38;text-decoration: underline;font-family: Impact,Charocal,sans-serif;">Welcome</h2>
-         <table style="width:100%;padding-left: 40px">
-<!--     <td ><img src="pictures/toronto3.jpg" width="300" height="400" /></td>-->
-    <td style="font-size: 50;color:#BDBDBD; font-family: Impact, Charcoal, sans-serif;">Ricky's Home Hotel</td>
-<!--    <td ><img src="pictures/Old_City_Hall.jpg" width="300" height="400" /></td>  -->
-          </table>
-        <p><span style="font-weight: bold"></span>Parking</p>
-         <p>Ricky's Home offers underground parking with in and out privileges for registered guests.</p>
-</p>  
-<p>Hotel Features</p>
-<p>Accessibility</p>
-<p>Business Services</p>
-<p>Guest Services</p>
-<p>Internet Access</p>
-<p>Pet Policy</P>
- </body>
 
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/navigation.css"/>        
+        <title>Home Page</title>
+    </head>
+    <header>
+        <h1>Banana Hotel</h1>
+        <div class = "navigation">
+            <ul>
+                <li><a id="id" href = "index.jsp">Home</a></li>
+                <li><a href="reservation.jsp">Reservation</a></li> 
+                <li><a href = "gallery.jsp">Gallery</a></li>
+                <li><a href = "contact.jsp">Contact</a></li>
+                    <% if ((session.getAttribute("username") == null) || (session.getAttribute("username") == "")) {%>
+                <li style="float:right"><a href="login.jsp">Login/Signup</a></li>
+                    <%} else { %>
+                <li style="float:right"><a href="logut.jsp">Logout</a></li>
+                    <%}%>
+            </ul>
+        </div>
+    </header>
+
+    <body>
+        <br>
+        <br>
+
+    <center>        
+        <h2>Welcome to Banana Hotel</h2>        
+        <!--        <img src="pictures/Old_City_Hall.jpg" width="300" height="400" />-->
+        <img src="http://orig04.deviantart.net/88de/f/2015/098/3/8/sanic_the_hedgehog_by_creepypastize-d8oyelk.jpg" width="700" height="400"/>
+    </center>
+    <dl>
+        <dt> Parking</dt>
+        <dd>- Banana Home offers underground parking with in and out privileges for registered guests.</dd>
+        <br>
+
+        <dt>Hotel Features</dt>
+        <dd>- Starbucks</dd>
+        <dd>- McDonalds</dd>
+        <dd>- And many more features! </dd>
+        <br>
+
+        <dt>Accessibility</dt>
+        <dd>- Handicapped parking</dd>
+        <dd>- Easy access for people with disabilities</dd>
+        <br>
+
+        <dt>Business Services</dt>
+        <dd>- Self-service desks</dd>
+        <dd>- Help desks</dd>
+        <br>
+
+        <dt>Guest Services</dt>
+        <dd>- Uber services</dd>
+        <dd>- Taxi services</dd>
+        <dd>- Room service</dd>
+        <br>
+
+        <dt>Internet Access</dt>
+        <dd>- Google Fiber</dd>
+        <br>
+
+        <dt>Pet Policy</dt>
+        <dd>- Bring your pets, we love them!</dd>
+        <br>
+    </dl>
+
+
+
+
+
+</body>
+
+</html>

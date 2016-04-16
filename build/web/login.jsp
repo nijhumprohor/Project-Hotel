@@ -18,10 +18,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <title>Login</title>
-
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/navigation.css"/>        
+        <title>Gallery</title>
     </head>
+    <header>
+        <h1>Banana Hotel</h1>
+        <div class = "navigation">
+            <ul>
+                <li><a id="id" href = "index.jsp">Home</a></li>
+                <li><a href="reservation.jsp">Reservation</a></li> 
+                <li><a href = "gallery.jsp">Gallery</a></li>
+                <li><a href = "contact.jsp">Contact</a></li>
+                    <% if ((session.getAttribute("username") == null) || (session.getAttribute("username") == "")) {%>
+                <li style="float:right"><a href="login.jsp">Login/Signup</a></li>
+                    <%} else { %>
+                <li style="float:right"><a href="logut.jsp">Logout</a></li>
+                    <%}%>
+            </ul>
+        </div>
+    </header>
     <body>
 
 
@@ -65,7 +82,7 @@
                                     String password = request.getParameter("password");
                                     String submit = request.getParameter("submit");
 
-                                        //Statement stmt;
+                                    //Statement stmt;
                                     Class.forName("oracle.jdbc.driver.OracleDriver").newInstance();
                                     Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@dilbert.humber.ca:1521:grok", "n01068251", "oracle");
 
@@ -74,9 +91,9 @@
                                     rs = st.executeQuery("select * from USERS where username = '" + username + "' and password = '" + password + "'");
                                     if (rs.next() && username != null && password != null) {
                                         session.setAttribute("username", username);
-                                        %>
-                                        <jsp:forward page="response.jsp"/> 
-                                      <%  } 
+                                %>
+                                <jsp:forward page="response.jsp"/> 
+                                <%  }
                                 %>
                                 <p class="change_link">
                                     Not a member yet ?
