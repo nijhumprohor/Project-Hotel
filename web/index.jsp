@@ -8,8 +8,6 @@ Hotel Info: http://torontoregency.hyatt.com/en/hotel/our-hotel.html
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%@ page session = "true" %>
-
-
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -21,8 +19,8 @@ Hotel Info: http://torontoregency.hyatt.com/en/hotel/our-hotel.html
         <h1>Banana Hotel</h1>
         <div class = "navigation">
             <ul>
-                <li><a id="id" href = "index.jsp">Home</a></li>
-                <li><a href="reservation.jsp">Reservation</a></li> 
+                <li><a href = "index.jsp">Home</a></li>
+                <li><a href = "reservation.jsp">Reservation</a></li> 
                 <li><a href = "gallery.jsp">Gallery</a></li>
                 <li><a href = "contact.jsp">Contact</a></li>
                     <% if ((session.getAttribute("username") == null) || (session.getAttribute("username") == "")) {%>
@@ -35,54 +33,45 @@ Hotel Info: http://torontoregency.hyatt.com/en/hotel/our-hotel.html
     </header>
 
     <body>
-        <br>
-        <br>
-
     <center>        
         <h2>Welcome to Banana Hotel</h2>        
         <!--        <img src="pictures/Old_City_Hall.jpg" width="300" height="400" />-->
-        <img src="http://orig04.deviantart.net/88de/f/2015/098/3/8/sanic_the_hedgehog_by_creepypastize-d8oyelk.jpg" width="700" height="400"/>
+        <img src="http://www.hotel-r.net/im/hotel/mx/hotel-banana-1.jpg" width="700" height="400"/>
     </center>
     <dl>
         <dt> Parking</dt>
-        <dd>- Banana Home offers underground parking with in and out privileges for registered guests.</dd>
+        <dd>• Banana Home offers underground parking with in and out privileges for registered guests.</dd>
         <br>
 
         <dt>Hotel Features</dt>
-        <dd>- Starbucks</dd>
-        <dd>- McDonalds</dd>
-        <dd>- And many more features! </dd>
+        <dd>• Starbucks</dd>
+        <dd>• McDonalds</dd>
+        <dd>• And many more features! </dd>
         <br>
 
         <dt>Accessibility</dt>
-        <dd>- Handicapped parking</dd>
-        <dd>- Easy access for people with disabilities</dd>
+        <dd>• Handicapped parking</dd>
+        <dd>• Easy access for people with disabilities</dd>
         <br>
 
         <dt>Business Services</dt>
-        <dd>- Self-service desks</dd>
-        <dd>- Help desks</dd>
+        <dd>• Self-service desks</dd>
+        <dd>• Help desks</dd>
         <br>
 
         <dt>Guest Services</dt>
-        <dd>- Uber services</dd>
-        <dd>- Taxi services</dd>
-        <dd>- Room service</dd>
+        <dd>• Uber services</dd>
+        <dd>• Taxi services</dd>
+        <dd>• Room service</dd>
         <br>
 
         <dt>Internet Access</dt>
-        <dd>- Google Fiber</dd>
+        <dd>• Google Fiber</dd>
         <br>
 
         <dt>Pet Policy</dt>
-        <dd>- Bring your pets, we love them!</dd>
+        <dd>• Bring your pets, we love them!</dd>
         <br>
     </dl>
-
-
-
-
-
-</body>
-
+    </body>
 </html>

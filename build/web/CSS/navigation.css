@@ -31,9 +31,12 @@ li a {
 li a:hover {
     background-color: grey;
 }
+li {
+    border-right: 1px solid black;
+}
 
-.active {
-    background-color: #4CAF50;
+li:last-child {
+    border-right: none;
 }
 
 div{

@@ -47,18 +47,44 @@
         %>  
 
         <div class="desk">
-            <table>
-                <tr> 1 Bed $80 per night </tr>
-                <td>testing</td>
+            <br>
+            <style>
+                tr, th{
+                    text-align: center;
+                    padding: 15px;
+                }
+            </style>
             
+            <table style="width:100%" border="1px solid black">
+                <tr>
+                    <th>Beds</th>
+                    <th>Price Per Day</th> 
+                    <th>Specials</th>
+                </tr>
+                
+                <tr>
+                    <td>1 Bed</td>
+                    <td>$80</td> 
+                    <td>• 24 Hour Tea & Coffee in Lobby</td>
+                </tr>
+                
+                <tr>
+                    <td>2 Beds</td>
+                    <td>$90 </td> 
+                    <td>• 24 Hour Tea & Coffee in Lobby</td>
+                </tr>
+                
+                <tr>
+                    <td>4 Beds</td>
+                    <td>$100 </td> 
+                    <td>• 24 Hour Tea & Coffee in Lobby                        
+                        <br>
+                        • Complimentary breakfast
+                        <br>
+                        • Room Service
+                    </td>
+                </tr>
             </table>
-
-            2 Beds $90 per night
-            24 Hour Tea & Coffee in Lobby!
-
-            Room Special
-            1 Night with Dinner and Breakfast for $110.
-            Meals include the special of the day.
         </div>
         <%
             Class.forName("oracle.jdbc.driver.OracleDriver").newInstance();
@@ -77,14 +103,13 @@
                 price.add(rs.getString("price"));
             }
         %> 
-        <p>
-
-
-        </p>
-
+        <br>
+    <center>
+        <p>Currently, all rooms come with a complimentary lunch.</p>
+    </center>
 
         <%--catch(Exception e){}--%>
-        <fieldset>
+        
             <% for (int i = 0; i < desc.size(); ++i) {
             %>
             <li>
@@ -93,7 +118,5 @@
             <%
                 }
             %>
-
-        </fieldset>
     </body>
 </html>

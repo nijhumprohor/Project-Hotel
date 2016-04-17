@@ -34,11 +34,10 @@
 
         <div class="deck">
             <h5><u>CONTACT INFORMATION</u></h5>
-            <h2>RICKY'S HOME</h2><br>
-            RICKY AU<br>
-            370 King Street<br>
-            Toronto, ON M5V 1J9<br>
-            647-780-6969
+            <h2>BANANA HOTEL</h2><br>
+            420 Banana Street<br>
+            Banana, BA B4N 4NA<br>
+            782-522-6161
             <br>
             <br>	
 
@@ -49,12 +48,20 @@
 
                 <form action="MAILTO:ruhul.amin.ca@gmail.com" method="post" enctype="text/plain">
                     Name:<br>
-                    <input type="text" name="name" value="your name"><br>
+                    <input type="text" name="name" value="Please enter your name here" 
+                           onfocus="if (this.value == 'Please enter your name here') {this.value = '';}"
+                            onblur="if (this.value == '') {this.value = 'Please enter your name here';}"><br>
                     E-mail:<br>
-                    <input type="text" name="mail" value="your email"><br>
+                    <input type="text" name="mail" value="Please enter your email here" 
+                           onfocus="if (this.value == 'Please enter your email here') {this.value = '';}"                           
+                           onblur="if (this.value == '') {this.value = 'Please enter your email here';}"
+                           ><br>
                     <br>
                     Comment:<br>
-                    <textarea name="comment" rows="5" cols="40"></textarea>
+                    <textarea name="comment" rows="5" cols="40" 
+                           onfocus="if (this.value == 'Please enter your comments here') {this.value = '';}"                           
+                           onblur="if (this.value == '') {this.value = 'Please enter your comments here';}"
+                           >Please enter your comments here</textarea>
                     <br>
                     <input type="submit" value="Send">
                     <input type="reset" value="Reset">
@@ -70,7 +77,7 @@
                         var myOptions = {zoom: 14, center: new google.maps.LatLng(43.646710, -79.392013), mapTypeId: google.maps.MapTypeId.ROADMAP};
                         map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
                         marker = new google.maps.Marker({map: map, position: new google.maps.LatLng(43.646710, -79.392013)});
-                        infowindow = new google.maps.InfoWindow({content: "<b>RICKY'S HOME</b><br/>370 King Street<br/> M5V 1J9 Toronto"});
+                        infowindow = new google.maps.InfoWindow({content: "<b>BANANA HOTEL</b><br/>420 Banana Street<br/> B4N 4NA Banana"});
                         google.maps.event.addListener(marker, "click", function () {
                             infowindow.open(map, marker);
                         });

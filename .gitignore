@@ -47,3 +47,5 @@ Temporary Items
 .apdisk
 nbproject/private/private.xml
 /dist/
+build/web/WEB-INF/lib/ojdbc6.jar
+build/web/WEB-INF/lib/mysql-connector-java-5.1.23-bin.jar

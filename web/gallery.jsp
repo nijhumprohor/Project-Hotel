@@ -31,43 +31,92 @@
         </div>
     </header>
     <body>
-        <table style="width:45%">
+        <br>
+    <center>
+            <style>
+                tr, td{
+                    text-align: center;
+                    padding: 15px;
+                }
+            </style>
+            
+        <table style="width:65%" border="1px solid black">
             <tr>
-                <th><img src="pictures/1.jpg" width="200" height="150"></th>
-                <td style="color:#BDBDBD; font-weight: bold;">Grand Deluxe Room,
-                    Includes Full breakfast Buffet, No Smoking
-                    Occupancy for 4,  
-                    2 LCD Tvs, DVD Player,Wi-Fi Coffeemaker, In-Room</td>		
-
+                <td><img src="pictures/1.jpg" width="200" height="150"></td>
+                <td style="font-weight: bold;">
+                    • Grand Deluxe Room
+                    <br>
+                    • Includes Full breakfast Buffet
+                    <br>
+                    • Occupancy for 4
+                    <br>
+                    • 2 LCD TVs
+                    <br>
+                    • DVD Player
+                    <br>
+                    • Coffeemaker
+                </td>		
             </tr>
+
             <tr>
                 <td><img src="pictures/Grand Double.jpg" width="200" height="150"></td>
-                <td style="color:#BDBDBD; font-weight: bold;">Grand Double Room,2 King Bed, No Smoking
-                    Occupancy 4 (5 with extra bed)
-                    Includes Full breakfast Buffet, No Smoking
-                    Occupancy for 2,  
-                    2 LCD Tvs, DVD Player,FREE Wi-Fi Coffee maker
-                    Business Room</td>		
-
+                <td style="font-weight: bold;">
+                    • Grand Double Room
+                    <br>
+                    • Occupancy 2 (3 with extra bed)
+                    <br>
+                    • Includes Full breakfast Buffet, No Smoking
+                    <br>
+                    • Occupancy for 2
+                    <br>
+                    • 2 LCD TVs
+                    <br>
+                    • DVD Player
+                    <br>
+                    • Coffee maker
+                </td>
             </tr>
+            
             <tr>
                 <td><img src="pictures/Two Bed.jpg" width="200" height="150"></td>
-                <td style="color:#BDBDBD; font-weight: bold;">Double Room,Two Queen Beds, No Smoking
-                    Occupancy For 2,
-                    Pay-For-View Movies, FREE Wi-Fi
-                    Coffee maker, In-Room
-                    TV-Alarm Clock</td>		
-
+                <td style="font-weight: bold;">
+                    • Double Room
+                    <br>
+                    • Two Queen Beds
+                    <br>
+                    • Occupancy For 2
+                    <br>
+                    • Pay-For-View Movies
+                    <br>                   
+                    • Coffee maker 
+                    <br>
+                    • TV-Alarm Clock
+                </td>		
             </tr>
+            
             <tr>
                 <td><img src="pictures/Single Room.jpg" width="200" height="150"></td>
-                <td style="color:#BDBDBD; font-weight: bold;">Single  Beds, No Smoking
-                    Occupancy 2 (3 with extra bed)
-                    Corner Room
-                    LCD TV, DVD Player, Pay-For-View Movies
-                    Traditional</td>		
-
+                <td style="font-weight: bold;">
+                    • Single Beds   
+                    <br>
+                    • Occupancy 1 (2 with extra bed)
+                    <br>
+                    • Corner Room
+                    <br>
+                    • LCD TV
+                    <br>
+                    • DVD Player
+                    <br>
+                    • Pay-For-View Movies
+                </td>		
             </tr>
+            
         </table>    
-    </body>
+        <p>
+            Free Wi-Fi is included in all rooms.
+            <br>
+            Please do not smoke in any rooms. 
+        </p>
+    </center>
+</body>
 </html>
