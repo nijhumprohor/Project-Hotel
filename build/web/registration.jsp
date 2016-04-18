@@ -32,7 +32,7 @@
                     <% if ((session.getAttribute("username") == null) || (session.getAttribute("username") == "")) {%>
                 <li style="float:right"><a href="login.jsp">Login/Signup</a></li>
                     <%} else { %>
-                <li style="float:right"><a href="logut.jsp">Logout</a></li>
+                <li style="float:right"><a href="logout.jsp">Logout</a></li>
                     <%}%>
             </ul>
         </div>
@@ -57,7 +57,7 @@
 
 
                         <div id="register" class="animate form">
-                            <form > 
+                            <form method="post"> 
                                 <h1> Sign up </h1> 
                                 
                                 <p> 

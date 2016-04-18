@@ -9,10 +9,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/navigation.css"/>  
         <title>response</title>
     </head>
     <body>
- <h1>Hi ${username}!</h1>
+        <h1>Hi ${username}!</h1>
         <div>You've been logged in</div>
         Click <a href="index.jsp">here</a> to go back to home page    </body>
 </html>
